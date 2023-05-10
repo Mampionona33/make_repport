@@ -8,6 +8,11 @@
   ],
   "main": "src/index.js",
   "dependencies": {
+    "@fullcalendar/core": "^6.1.7",
+    "@fullcalendar/daygrid": "^6.1.7",
+    "@fullcalendar/interaction": "^6.1.7",
+    "@fullcalendar/react": "^6.1.7",
+    "@fullcalendar/timegrid": "^6.1.7",
     "loader-utils": "3.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",

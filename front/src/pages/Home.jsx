@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Calendar from "../components/Calendar/Calendar";
 
 const Home = () => {
   const [data, setData] = useState("");
@@ -15,6 +16,7 @@ const Home = () => {
     <div>
       <h1>Home</h1>
       <p>Données du serveur : {data}</p>
+      <Calendar />
     </div>
   );
 };
