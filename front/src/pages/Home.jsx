@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Calendar from "../components/Calendar/Calendar";
+import SideBarRight from "../components/SideBarRight/SideBarRight";
 
 const Home = () => {
   const [data, setData] = useState("");
@@ -17,6 +18,7 @@ const Home = () => {
       <h1>Home</h1>
       <p>Données du serveur : {data}</p>
       <Calendar />
+      <SideBarRight />
     </div>
   );
 };
