@@ -1,0 +1,33 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "install-dependencies front",
+      "command": "cd ./front && npm install"
+    },
+    {
+      "name": "install typescript",
+      "command": "cd ./backend && npm install -g typescript "
+    },
+    {
+      "name": "install-dependencies back",
+      "command": "cd ./backend && npm install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "start": {
+      "name": "start",
+      "command": "cd front && npm start",
+      "runAtStart": true,
+      "workingDirectory": "/codesandbox/front"
+    },
+    "run_backend": {
+      "name": "backend_dev",
+      "command": "cd ./backend && npm run dev",
+      "runAtStart": true,
+      "workingDirectory": "/codesandbox/backend"
+    }
+  }
+}
