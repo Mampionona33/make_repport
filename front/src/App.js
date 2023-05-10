@@ -1,10 +1,21 @@
 import "./styles.css";
+import React from "react";
+import {
+  BrowserRouter,
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom";
+import Home from "./pages/Home";
+import Detail from "./pages/Detail";
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen test!</h2>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/details" element={<Detail />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
